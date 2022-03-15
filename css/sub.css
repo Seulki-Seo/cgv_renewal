@@ -1,0 +1,324 @@
+/*브레드크럼*/
+#main .location ul {
+	display: flex;
+	width: 9%;
+	justify-content: space-between;
+	padding-top: 50px;
+}
+#main .location ul li a {
+	position: relative;
+}
+#main .location ul li:nth-child(1) a::after {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 9px;
+	background: url(../images/location-arr.png) no-repeat center;
+	position: absolute;
+	left: 30px;
+	top: 7px;
+}
+
+/*영화별, 극장별, 특별관*/
+#main .time_table_page {
+	position: relative;
+}
+#main .movie_choice_area {
+	position: relative;
+}
+
+#main .tab_left_area {
+	margin-top: 50px;
+	border: 3px solid #333;
+	border-radius: 10px;
+}
+#main .tab_left_area li {
+	font-size: 18px;
+}
+#main .tab_left_area li .btn {
+	width: 210px;
+	height: 120px;
+	text-align: center;
+	line-height: 120px;
+	border-radius: 5px 0 0 5px;
+}
+#main .tab_left_area li img {
+	margin-right: 20px;
+	vertical-align: middle;
+}
+
+#main .tab_left_area ul li button.on {
+	background: #d9d9d9;
+}
+
+/*전체 영화, CGV ART HOUSE*/
+#main .tab_list {
+	width: 830px;
+	border-bottom: 1px solid #333;
+	position: absolute;
+	left: 260px;
+	top: 15px;
+	padding: 0 0 10px 20px;
+}
+#main .tab_list ul {
+	display: flex;
+	width: 25%;
+	justify-content: space-between;
+}
+#main .tab_list ul li .btn {
+	position: relative;
+	font-size: 14px;
+}
+#main .tab_list ul li button.on::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: #333;
+	position: absolute;
+	left: 0;
+	top: 30px;
+}
+
+/*영화 리스트*/
+#main .list_section .list {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	height: 250px;
+	justify-content: space-between;
+	position: absolute;
+	left: 270px;
+	top: 80px;
+	overflow-y: scroll;
+}
+#main .list_section .list li .btn {
+	margin: 3px;
+	width: 220px;
+	height: 30px;
+	border: none;
+	background: none;
+	text-align: left;
+	padding-left: 15px;
+	font-size: 15px;
+	cursor: pointer;
+}
+
+#main .list_section .list li:hover .btn {
+	text-decoration: underline;
+}
+#main .list_section .list li .btn.on {
+	background: #333;
+	color: #fff;
+	font-weight: 700;
+}
+
+/*영화 리스트_스크롤바 디자인*/
+#main .list_section .list::-webkit-scrollbar {
+	width: 5px;
+}
+#main .list_section .list::-webkit-scrollbar-thumb {
+	background: #333;
+}
+#main .list_section .list::-webkit-scrollbar-track {
+	background: #d9d9d9;
+}
+
+/*영화 포스터*/
+/*나중에 다른 영화 클릭했을 때 포스터 바뀌게 코딩해 보기*/
+#main .poster_section {
+	position: absolute;
+	right: 2px;
+	top: 3px;
+}
+#main .poster_section img {
+	width: 250px;
+	height: 361px;
+	border-radius: 0 8px 8px 0;
+}
+
+/*상영 시간표_제목*/
+#main .tit {
+	margin-top: 70px;
+	font-size: 24px;
+}
+#main .tit .tit_gray {
+	font-weight: 400;
+	color: #777;
+}
+
+/*상영 시간표_연도*/
+#main .year_area {
+	display: flex;
+}
+#main .year_area .year {
+	font-size: 12px;
+	width: 55px;
+	height: 20px;
+	background: #fff;
+	border: 1px solid #d9d9d9;
+	border-radius: 20px;
+	text-align: center;
+	line-height: 20px;
+}
+#main .year_area .year:nth-child(1) {
+	position: absolute;
+	left: 68px;
+	bottom: -10px;
+}
+#main .year_area .year:nth-child(2) {
+	position: absolute;
+	left: 274px;
+	bottom: -10px;
+}
+
+/*상영 시간표_일자 선택*/
+#main .time_schedule ul {
+	display: flex;
+	width: 89.53913%;
+	justify-content: space-between;
+	position: absolute;
+	left: 70px;
+	bottom: -40px;
+	z-index: 1;
+}
+#main .time_schedule ul li {
+	font-size: 15px;
+	position: relative;
+}
+#main .time_schedule .saturday {
+	color: #0073c4;
+}
+#main .time_schedule .sunday {
+	color: #ff0000;
+}
+
+#main .time_schedule ul li a.on::after {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 3px;
+	background: #333;
+	position: absolute;
+	left: 0;
+	top: 25px;
+}
+
+#main .date_arrow {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	position: absolute;
+	left: 0;
+	bottom: -45px;
+	cursor: pointer;
+}
+
+/*상영 시간표_조조, 심야, 관람 등급 안내*/
+#main .movie_option ul {
+	display: flex;
+	position: relative;
+	left: 0;
+	bottom: -80px;
+}
+#main .movie_option ul li {
+	font-size: 14px;
+	padding-right: 15px;
+}
+#main .movie_option ul li img {
+	vertical-align: middle;
+	margin-right: 2px;
+}
+
+#main .movie_age {
+	font-size: 14px;
+	position: absolute;
+	right: 0;
+	bottom: -85px;
+}
+#main .movie_age a:hover {
+	text-decoration: underline;
+}
+
+/*상영 시간표_지역 선택*/
+#main .tab_block {
+	position: relative;
+}
+#main .tab_block .tab_block_list {
+	display: flex;
+	position: absolute;
+	left: 0;
+	bottom: 30px;
+}
+#main .tab_block .tab_block_list li .btn {
+	width: 200px;
+	height: 35px;
+	border: 1px solid #666;
+	line-height: 35px;
+	text-align: center;
+	margin-right: 31px;
+}
+
+#main .tab_block .tab_block_list li button.on {
+	background: #333;
+	color: #fff;
+}
+
+/*상영 시간표_서울 상세*/
+#main .theater_list_box {
+	margin-top: 180px;
+}
+#main .theater_area h3 {
+	font-size: 20px;
+	margin: 100px 0 15px;
+}
+
+#main .theater_detail {
+	display: flex;
+	border-top: 1px solid #ababab;
+	border-bottom: 1px solid #ababab;
+	padding: 5px 0 40px;
+}
+
+#main .theater_list .last {
+	border-top: none;
+}
+
+#main .theater_time {
+	display: flex;
+}
+
+#main .theater_type {
+	padding-top: 35px;
+	width: 170px;
+}
+#main .theater_type_s {
+	font-size: 14px;
+}
+
+#main .time_list {
+	display: flex;
+	text-align: center;
+	padding-left: 20px;
+}
+#main .time_list li {
+	margin-right: 50px;
+	position: relative;
+	padding-top: 35px;
+	cursor: pointer;
+}
+#main .time_list li img {
+	position: absolute;
+	left: -25px;
+	top: 28px;
+}
+#main .time_list .time {
+	font-weight: 700;
+	font-size: 20px;
+}
+
+#main .theater_type .chair,
+#main .time_list .chair {
+	font-size: 14px;
+	color: #777;
+}

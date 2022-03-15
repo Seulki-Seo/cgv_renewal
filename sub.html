@@ -1,0 +1,747 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV_상영 시간표</title>
+    <link rel="stylesheet" href="css/all.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/sub.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/default.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="header" class="header header_sub">
+            <div class="in">
+                <h1 class="main_logo">
+                    <a href="index.html">
+                        <img src="images/logo_sub.png" alt="CGV">
+                    </a>
+                </h1>
+                <h2 class="hide">메인 네비게이션</h2>
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">
+                                예매
+                            </a>
+                            <ul class="lnb lnb_sub">
+                                <li><a href="#">빠른 예매</a></li>
+                                <li><a href="#">상영 시간표</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                영화
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                극장
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                이벤트
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                스토어
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cl top_menu top_menu_sub">
+                    <ul class="cl left_top_list left_top_list_sub">
+                        <li>
+                            <a href="#">
+                                VIP LOUNGE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                멤버십
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                고객센터
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="cl right_top_list right_top_list_sub">
+                        <li>
+                            <a href="#" class="login_btn">
+                                로그인
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                회원가입
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                MY CGV
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="cl top_icon">
+                        <div class="icon_search">
+                            <a href="#">
+                                <img src="images/top_search_g.png" alt="검색">
+                            </a>
+                        </div>
+                        <div class="icon_menu">
+                            <a href="#">
+                                <img src="images/top_menu_g.png" alt="전체 메뉴">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lnb_bg lnb_bg_sub"></div>
+        </header>
+        <main id="main">
+            <div class="in">
+                <div class="location">
+                    <ul>
+                        <li>
+                            <a href="index.html">홈</a>
+                        </li>
+                        <li>
+                            <a href="sub.html">상영 시간표</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="time_table_page">
+                    <div class="movie_choice_area">
+                        <div class="tab_left_area">
+                            <ul>
+                                <li>
+                                    <button type="button" class="btn on">
+                                        <img src="images/choice-movie.png" alt="영화별">
+                                        영화별
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn">
+                                        <img src="images/choice-theater.png" alt="극장별">
+                                        극장별
+                                    </button>
+                                </li>
+                                <li>
+                                    <button type="button" class="btn">
+                                        <img src="images/choice-special.png" alt="특별관">
+                                        특별관
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab_list_area">
+                            <div class="tab_list">
+                                <ul>
+                                    <li>
+                                        <button type="button" class="btn on">
+                                            전체 영화
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            CGV ART HOUSE
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="list_section">
+                                <ul class="list">
+                                    <li>
+                                        <button type="button" class="btn on">
+                                            고스트버스터즈 라이즈
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            태일이
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            스파이더맨: 노 웨이 홈
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            라스트 나잇 인 소호
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            아담스 패밀리 2
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            앰뷸런스
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            언 포 기버블
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            로그 인 벨지움
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            장르만 로맨스
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            엔칸토: 마법의 세계
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            포에버 퍼스트 러브
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            너에게 가는 길
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            언힐러
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            돈 룩 업
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            왼팔의복서 닉
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            유체이탈자
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            프렌치 디스패치
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            도쿄 리벤저스
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            소설가 구보의 하루
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            듄
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            연애 빠진 로맨스
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            티탄
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            이터널스
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            해피 아워
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            킹메이커
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            레토
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            베네데타
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            마이 뉴욕 다이어리
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            스파이 캣
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            퍼스트 카우
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            어나더 라운드
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            뷰티풀 보이
+                                        </button>
+                                    </li>
+                                    <li>
+                                        <button type="button" class="btn">
+                                            킬링카인드:킬러의 수제자
+                                        </button>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="poster_section">
+                            <div class="pic">
+                                <img src="images/poster_1.jpg" alt="고스트버스터즈 라이즈">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tit">
+                        <h2>고스트버스터즈 라이즈 <span class="tit_gray">상영 시간표</span></h2>
+                    </div>
+                    <div class="year_area">
+                        <div class="year">2021.11</div>
+                        <div class="year">2021.12</div>
+                    </div>
+                    <div class="time_schedule">
+                        <ul>
+                            <li><a href="#" class="on">29 · 오늘</a></li>
+                            <li><a href="#">30 · 내일</a></li>
+                            <li><a href="#">1 · 수</a></li>
+                            <li><a href="#">2 · 목</a></li>
+                            <li><a href="#">3 · 금</a></li>
+                            <li><a href="#">
+                                    <span class="saturday">4 · 토</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <span class="sunday">5 · 일</span>
+                                </a></li>
+                            <li><a href="#">6 · 월</a></li>
+                            <li><a href="#">7 · 화</a></li>
+                            <li><a href="#">8 · 수</a></li>
+                            <li><a href="#">9 · 목</a></li>
+                            <li><a href="#">10 · 금</a></li>
+                            <li><a href="#">
+                                    <span class="saturday">11 · 토</span>
+                                </a></li>
+                            <li><a href="#">
+                                    <span class="sunday">12 · 일</span>
+                                </a></li>
+                        </ul>
+                        <div class="date_arrow">
+                            <div class="prev_arrow">
+                                <img src="images/arrow_prev_g.png" alt="이전 날짜로 가기">
+                            </div>
+                            <div class="next_arrow">
+                                <img src="images/arrow_next_g.png" alt="다음 날짜로 가기">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="movie_option">
+                        <ul>
+                            <li>
+                                <img src="images/time_sun.png" alt="조조">
+                                조조
+                            </li>
+                            <li>
+                                <img src="images/time_moon.png" alt="심야">
+                                심야
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="movie_age">
+                        <a href="#">
+                            관람 등급 안내
+                        </a>
+                    </div>
+                </div>
+                <!--time_table_page end-->
+                <div class="theater_list_box">
+                    <div class="tab_block">
+                        <ul class="tab_block_list">
+                            <li>
+                                <button type="button" class="btn on">서울</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn">경기</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn">인천</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn">대전/충청/세종</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn">부산/대구/경상</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn">광주/전라/강원</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="theater_list">
+                        <div class="theater_area">
+                            <h3>강남</h3>
+                        </div>
+                        <div class="theater_detail">
+                            <div class="theater_type">
+                                <p class="name">7관 [백신패스관]</p>
+                                <p class="chair">총 104석</p>
+                            </div>
+                            <div class="theater_time">
+                                <div class="theater_type_s">2D</div>
+                                <div class="theater_time_box">
+                                    <ul class="time_list">
+                                        <li class="time_box">
+                                            <img src="images/time_sun.png" alt="조조">
+                                            <p class="time">10:15</p>
+                                            <p class="chair">64석</p>
+                                        </li>
+                                        <li class="time_box">
+                                            <img src="images/time_moon.png" alt="심야">
+                                            <p class="time">23:10</p>
+                                            <p class="chair">64석</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--theater_list1 end-->
+                    <div class="theater_list">
+                        <div class="theater_area">
+                            <h3>강동</h3>
+                        </div>
+                        <div class="theater_detail">
+                            <div class="theater_type">
+                                <p class="name">10관</p>
+                                <p class="chair">총 35석</p>
+                            </div>
+                            <div class="theater_time">
+                                <div class="theater_type_s">2D</div>
+                                <div class="theater_time_box">
+                                    <ul class="time_list">
+                                        <li>
+                                            <img src="images/time_sun.png" alt="조조">
+                                            <p class="time">10:20</p>
+                                            <p class="chair">23석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">14:55</p>
+                                            <p class="chair">35석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">17:30</p>
+                                            <p class="chair">35석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">19:45</p>
+                                            <p class="chair">30석</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--theater_list2 end-->
+                    <div class="theater_list">
+                        <div class="theater_area">
+                            <h3>동대문</h3>
+                        </div>
+                        <div class="theater_detail">
+                            <div class="theater_type">
+                                <p class="name">8관</p>
+                                <p class="chair">총 108석</p>
+                            </div>
+                            <div class="theater_time">
+                                <div class="theater_type_s">2D</div>
+                                <div class="theater_time_box">
+                                    <ul class="time_list">
+                                        <li>
+                                            <p class="time">12:40</p>
+                                            <p class="chair">70석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">14:25</p>
+                                            <p class="chair">100석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">16:30</p>
+                                            <p class="chair">108석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">18:50</p>
+                                            <p class="chair">35석</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--theater_list3 end-->
+                    <div class="theater_list">
+                        <div class="theater_area">
+                            <h3>용산</h3>
+                        </div>
+                        <div class="theater_detail">
+                            <div class="theater_type">
+                                <p class="name">7관 [백신패스관]</p>
+                                <p class="chair">총 425석</p>
+                            </div>
+                            <div class="theater_time">
+                                <div class="theater_type_s">2D IMAX</div>
+                                <div class="theater_time_box">
+                                    <ul class="time_list">
+                                        <li>
+                                            <img src="images/time_sun.png" alt="조조">
+                                            <p class="time">08:55</p>
+                                            <p class="chair">400석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">11:10</p>
+                                            <p class="chair">371석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">13:25</p>
+                                            <p class="chair">250석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">19:25</p>
+                                            <p class="chair">64석</p>
+                                        </li>
+                                        <li>
+                                            <img src="images/time_moon.png" alt="심야">
+                                            <p class="time">21:30</p>
+                                            <p class="chair">80석</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--theater_list4 end-->
+                    <div class="theater_list">
+                        <div class="theater_detail last">
+                            <div class="theater_type">
+                                <p class="name">3관</p>
+                                <p class="chair">총 204석</p>
+                            </div>
+                            <div class="theater_time">
+                                <div class="theater_type_s">2D IMAX</div>
+                                <div class="theater_time_box">
+                                    <ul class="time_list">
+                                        <li>
+                                            <img src="images/time_sun.png" alt="조조">
+                                            <p class="time">08:15</p>
+                                            <p class="chair">64석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">10:30</p>
+                                            <p class="chair">196석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">17:15</p>
+                                            <p class="chair">44석</p>
+                                        </li>
+                                        <li>
+                                            <p class="time">19:25</p>
+                                            <p class="chair">64석</p>
+                                        </li>
+                                        <li>
+                                            <img src="images/time_moon.png" alt="심야">
+                                            <p class="time">24:10</p>
+                                            <p class="chair">200석</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--theater_list5 end-->
+                </div>
+                <!--theater_list_box enb-->
+            </div>
+            <!--in end-->
+        </main>
+        <footer id="footer">
+            <div class="in">
+                <div class="footer_top">
+                    <ul class="top_list">
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">IR</a></li>
+                        <li><a href="#"><span class="impor">개인정보 처리방침</span></a></li>
+                        <li><a href="#">채용 정보</a></li>
+                        <li><a href="#">광고/프로모션 문의</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div class="cl footer_right">
+                    <ul class="social_list">
+                        <li>
+                            <a href="#">
+                                <img src="images/social_facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social_youtube.png" alt="youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social_twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social_instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="partner_site">
+                        <div class="partner_menu">
+                            <ul class="partner_list">
+                                <li>CJ그룹</li>
+                                <li><a href="#">CJ주식회사</a></li>
+                            </ul>
+                            <ul class="partner_list">
+                                <li>식품 & 식품서비스</li>
+                                <li><a href="#">CJ제일제당</a></li>
+                                <li><a href="#">CJ푸드빌</a></li>
+                                <li><a href="#">CJ프레시웨이</a></li>
+                            </ul>
+                            <ul class="partner_list">
+                                <li>생명공학</li>
+                                <li><a href="#">CJ제일제당 BIO사업부문</a></li>
+                                <li><a href="#">CJ Feed&Card</a></li>
+                            </ul>
+                            <ul class="partner_list">
+                                <li>물류 & 신유통</li>
+                                <li><a href="#">CJ대한통운</a></li>
+                                <li><a href="#">CJ대한통운 건설부문</a></li>
+                                <li><a href="#">CJ올리브영</a></li>
+                                <li><a href="#">CJ올리브네트웍스</a></li>
+                                <li><a href="#">CJENM 커머스부문</a></li>
+                            </ul>
+                            <ul class="partner_list">
+                                <li>엔터테인먼트 & 미디어</li>
+                                <li><a href="#">CJENM 엔터테인먼트</a></li>
+                                <li><a href="#">CJ CGV</a></li>
+                            </ul>
+                        </div>
+                        <div class="partner_btn">
+                            계열사 바로가기
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_logo">
+                        <img src="images/logo_footer.png" alt="CJ CGV">
+                    </div>
+                    <div class="footer_txt">
+                        <p class="txt">(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동) <br>
+                            대표이사 : 허민회 | 사업자등록번호 : 104-81-45690 | 통신판매업신고번호 : 2017-서울용산-0662
+                            호스팅사업자 : CJ올리브네트웍스 | 개인정보보호 책임자 : 심준범 | 대표이메일 : cjcgvmaster@cj.net
+                        </p>
+                        <p class="copyright">&copy; CJ CGV. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="login_mask">
+        <form>
+            <div class="login_popup">
+                <div class="login_tit">로그인</div>
+                <div class="close_btn">
+                    <img src="images/btn_close.png" alt="닫기 버튼">
+                </div>
+                <div class="form_area">
+                    <ul>
+                        <li>
+                            <label for="user_id" class="hide">아이디를 입력하세요.</label>
+                            <input type="text" id="user_id" class="text" placeholder="아이디">
+                        </li>
+                        <li>
+                            <label for="user_pw" class="hide">패스워드를 입력하세요.</label>
+                            <input type="text" id="user_pw" class="text" placeholder="비밀번호">
+                        </li>
+                    </ul>
+                    <div class="info_save">
+                        <label>
+                            <input type="checkbox" class="check_box" name="chk">아이디 저장
+                        </label>
+                    </div>
+                    <div class="ad">
+                        <a href="#" class="ad_txt">휴대폰 간편 로그인</a>
+                        <div class="ad_btn">광고</div>
+                    </div>
+                    <div class="send_btn_area">
+                        <button type="submit" class="send_btn">로그인</button>
+                    </div>
+                    <div class="find_join">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    ID/PW 찾기
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    회원가입
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--form_area end-->
+                <div class="ad_img">
+                    <img src="images/login_ad.jpg" alt="다가오는 크리스마스는 좋아하는 영화와 함께!">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="top"><i class="fas fa-sort-up"></i></div>
+</body>
+
+</html>

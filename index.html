@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CGV</title>
+    <link rel="stylesheet" href="css/swiper.css" type="text/css">
+    <link rel="stylesheet" href="css/all.css" type="text/css">
+    <link rel="stylesheet" href="css/common.css" type="text/css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/default.js"></script>
+    <script>
+        $(function () {
+            var swiper = new Swiper('.swiper-container', {
+                navigation: {
+                    nextEl: '.swiper-button-next',
+                    prevEl: '.swiper-button-prev',
+                },
+                pagination: {
+                    el: '.swiper-pagination',
+                },
+                slidesPerView: 1,
+                spaceBetween: 15,
+                loop: true,
+                autoplay: {
+                    delay: 5000,
+                    disableOnInteraction: false,
+                },
+            });
+        })
+    </script>
+</head>
+
+<body>
+    <div class="wrap">
+        <header id="header" class="header">
+            <div class="in">
+                <h1 class="main_logo">
+                    <a href="index.html">
+                        <img src="images/logo_main.png" alt="CGV">
+                    </a>
+                </h1>
+                <h2 class="hide">메인 네비게이션</h2>
+                <nav class="nav">
+                    <ul class="gnb">
+                        <li>
+                            <a href="#">
+                                예매
+                            </a>
+                            <ul class="lnb">
+                                <li><a href="#">빠른 예매</a></li>
+                                <li><a href="sub.html">상영 시간표</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">
+                                영화
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                극장
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                이벤트
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                스토어
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="cl top_menu">
+                    <ul class="cl left_top_list">
+                        <li>
+                            <a href="#">
+                                VIP LOUNGE
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                멤버십
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                고객센터
+                            </a>
+                        </li>
+                    </ul>
+                    <ul class="cl right_top_list">
+                        <li>
+                            <a href="#" class="login_btn">
+                                로그인
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                회원가입
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                MY CGV
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="cl top_icon">
+                        <div class="icon_search">
+                            <a href="#">
+                                <img src="images/top_search.png" alt="검색">
+                            </a>
+                        </div>
+                        <div class="icon_menu">
+                            <a href="#">
+                                <img src="images/top_menu.png" alt="전체 메뉴">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="reser_btn">
+                    <a href="#">빠른 예매 바로가기</a>
+                </div>
+            </div>
+            <div class="lnb_bg"></div>
+        </header>
+        <div id="visual">
+            <div class="in">
+                <div class="slider">
+                    <div class="swiper-container">
+                        <ul class="swiper-wrapper">
+                            <li class="swiper-slide vis1"></li>
+                            <li class="swiper-slide vis2"></li>
+                        </ul>
+                        <div class="swiper-pagination"></div>
+                        <div class="next swiper-button-next"></div>
+                        <div class="prev swiper-button-prev"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="fast_reser">
+            <div class="in">
+                <h2 class="reser_tit hide">
+                    영화 예매하기
+                </h2>
+                <ul class="reser_top">
+                    <li><a href="#">영화</a></li>
+                    <li><a href="#">극장</a></li>
+                    <li><a href="#">시간</a></li>
+                </ul>
+                <ul class="reser_date">
+                    <li><a href="#" class="on">29 · 오늘</a></li>
+                    <li><a href="#">30 · 내일</a></li>
+                    <li><a href="#">1 · 수</a></li>
+                    <li><a href="#">2 · 목</a></li>
+                    <li><a href="#">3 · 금</a></li>
+                    <li><a href="#">
+                            <span class="saturday">4 · 토</span>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="sunday">5 · 일</span>
+                        </a></li>
+                    <li><a href="#">6 · 월</a></li>
+                    <li><a href="#">7 · 화</a></li>
+                    <li><a href="#">8 · 수</a></li>
+                    <li><a href="#">9 · 목</a></li>
+                    <li><a href="#">10 · 금</a></li>
+                    <li><a href="#">
+                            <span class="saturday">11 · 토</span>
+                        </a></li>
+                    <li><a href="#">
+                            <span class="sunday">12 · 일</span>
+                        </a></li>
+                </ul>
+                <div class="date_arrow">
+                    <div class="prev_arrow">
+                        <img src="images/arrow_prev.png" alt="이전 날짜로 가기">
+                    </div>
+                    <div class="next_arrow">
+                        <img src="images/arrow_next.png" alt="다음 날짜로 가기">
+                    </div>
+                </div>
+                <div class="table_area">
+                    <table class="movie">
+                        <caption class="hide">영화 선택하기</caption>
+                        <thead>
+                            <tr>
+                                <th>전체</th>
+                                <th>특별관</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <td colspan="2">
+                                    <ul class="movie_list">
+                                        <li><a href="#">고스트버스터즈 라이즈</a></li>
+                                        <li><a href="#">태일이</a></li>
+                                        <li><a href="#">유체이탈자</a></li>
+                                        <li><a href="#">라스트 나잇 인 소호</a></li>
+                                        <li><a href="#">아담스 패밀리 2</a></li>
+                                        <li><a href="#">앰뷸런스</a></li>
+                                        <li><a href="#">돈 룩 업</a></li>
+                                        <li><a href="#">언 포 기버블</a></li>
+                                        <li><a href="#">연애 빠진 로맨스</a></li>
+                                        <li><a href="#">로또 쉐어</a></li>
+                                        <li><a href="#">로그 인 벨지움</a></li>
+                                        <li><a href="#">장르만 로맨스</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <table class="theater">
+                        <caption class="hide">극장 선택하기</caption>
+                        <thead>
+                            <tr>
+                                <th>전체</th>
+                                <th>특별관</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <td>
+                                    <ul class="city_list">
+                                        <li><a href="#">서울 (19)</a></li>
+                                        <li><a href="#">경기 (28)</a></li>
+                                        <li><a href="#">인천 (5)</a></li>
+                                        <li><a href="#">대전/충청/세종 (17)</a></li>
+                                        <li><a href="#">광주/전라 (9)</a></li>
+                                        <li><a href="#">강원 (4)</a></li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    <ul class="district_list">
+                                        <li><a href="#">강남</a></li>
+                                        <li><a href="#">강동</a></li>
+                                        <li><a href="#">군자</a></li>
+                                        <li><a href="#">동대문</a></li>
+                                        <li><a href="#">마곡</a></li>
+                                        <li><a href="#">목동</a></li>
+                                        <li><a href="#">상봉</a></li>
+                                        <li><a href="#">상암월드컵경기장</a></li>
+                                        <li><a href="#">성수</a></li>
+                                        <li><a href="#">센트럴</a></li>
+                                        <li><a href="#">송파파크하비오</a></li>
+                                        <li><a href="#">신촌</a></li>
+                                    </ul>
+                                </td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                    <table class="time">
+                        <caption class="hide">시간 선택하기</caption>
+                        <tr>
+                            <td><img src="images/time_sun.png" alt="조조">조조</td>
+                            <td><img src="images/time_moon.png" alt="심야">심야</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <div class="time_arrow">
+                                    <div class="prev_arrow">
+                                        <img src="images/arrow_prev.png" alt="이전 시간 확인하기">
+                                    </div>
+                                    <div class="next_arrow">
+                                        <img src="images/arrow_next.png" alt="다음 시간 확인하기">
+                                    </div>
+                                </div>
+                                <ul class="time_list">
+                                    <li><a href="#">00</a></li>
+                                    <li><a href="#">01</a></li>
+                                    <li><a href="#">02</a></li>
+                                    <li><a href="#">03</a></li>
+                                    <li><a href="#">04</a></li>
+                                    <li><a href="#">05</a></li>
+                                    <li><a href="#">06</a></li>
+                                    <li><a href="#">07</a></li>
+                                    <li><a href="#">08</a></li>
+                                    <li><a href="#">09</a></li>
+                                </ul>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">
+                                <span class="day"><img src="images/time_sun.png" alt="조조"></span>
+                                <div class="select_list">
+                                    <ul class="select">
+                                        <li>
+                                            <a href="#">
+                                                09:30 <br>
+                                                <span class="s">~11:44</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                고스트버스터즈 라이즈 <br>
+                                                <span class="s">2D (자막)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                강남 <br>
+                                                6관 [백신패스관] <br>
+                                                100/103
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="select">
+                                        <li>
+                                            <a href="#">
+                                                10:20 <br>
+                                                <span class="s">~11:34</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                고스트버스터즈 라이즈 <br>
+                                                <span class="s">2D (자막)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                강남 <br>
+                                                6관 [백신패스관] <br>
+                                                80/103
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="select">
+                                        <li>
+                                            <a href="#">
+                                                12:25 <br>
+                                                <span class="s">~13:39</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                고스트버스터즈 라이즈 <br>
+                                                <span class="s">2D (자막)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                강남 <br>
+                                                6관 [백신패스관] <br>
+                                                73/103
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="select">
+                                        <li>
+                                            <a href="#">
+                                                14:10 <br>
+                                                <span class="s">~15:24</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                고스트버스터즈 라이즈 <br>
+                                                <span class="s">2D (자막)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                강남 <br>
+                                                6관 [백신패스관] <br>
+                                                54/103
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="select">
+                                        <li>
+                                            <a href="#">
+                                                17:15 <br>
+                                                <span class="s">~18:29</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                고스트버스터즈 라이즈 <br>
+                                                <span class="s">2D (자막)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                강남 <br>
+                                                6관 [백신패스관] <br>
+                                                60/103
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <ul class="select">
+                                        <li>
+                                            <a href="#">
+                                                18:40 <br>
+                                                <span class="s">~19:55</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                고스트버스터즈 라이즈 <br>
+                                                <span class="s">2D (자막)</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                강남 <br>
+                                                6관 [백신패스관] <br>
+                                                71/103
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <main id="main">
+            <section class="section movies">
+                <div class="in">
+                    <h2 class="movie_tit">
+                        박스오피스
+                    </h2>
+                    <ul class="movie_list">
+                        <li>
+                            <div class="pic">
+                                <img src="images/poster_1.jpg" alt="고스트버스터즈 라이즈">
+                            </div>
+                            <div class="mask">
+                                <div class="txt">
+                                    할아버지의 갑작스런 죽음으로 이사하게 된 ‘트레버’, ‘피비’ 남매는 남겨진 집에서 의문의 현상과 수상한 물건들과 마주한다. 집뿐 아니라 마을 전체가
+                                    설명할 수 없는 미스터리한 현상이 연이어 발생하는 가운데, 교사로 위장 취업한 지질학자 '그루버슨'과 이들은 세상의 종말과 관련된 비밀을 쫓기
+                                    시작하는데…
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h3 class="title">
+                                    <a href="#">
+                                        고스트버스터즈 라이즈
+                                    </a>
+                                </h3>
+                                <p>예매율 22.7% | D-2 |
+                                    <a class="heart" href="#">♥</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <img src="images/poster_2.jpg" alt="유체이탈자">
+                            </div>
+                            <div class="mask">
+                                <div class="txt">
+                                    교통사고 현장에서 눈을 뜬 한 남자. 거울에 비친 낯선 얼굴과 이름, 자신이 누구인지 기억이 나지 않는다.
+                                    그는 12시간마다 몸이 바뀐다는 것을 깨닫게 되고, 자신을 둘러싼 사람들 사이의 연결고리를 찾기 시작한다. 그가 12시간마다 몸이 바뀌었던 사람들,
+                                    가는 곳마다 나타난 의문의 여자까지, 그리고 이들이 쫓고 있는 국가정보요원 ‘강이안’. “이제 알게 됐어. 내가 뭘 해야 되는지...”
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h3 class="title">
+                                    <a href="#">
+                                        유체이탈자
+                                    </a>
+                                </h3>
+                                <p>예매율 16.5% | ★ 8.2 |
+                                    <a class="heart" href="#">♥</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <img src="images/poster_3.jpg" alt="엔칸토: 마법의 세계">
+                            </div>
+                            <div class="mask">
+                                <div class="txt">
+                                    콜롬비아의 깊은 산 속, 놀라운 마법과 활기찬 매력이 넘치는 세계 ‘엔칸토’.
+                                    ‘엔칸토’의 마법 덕분에 초인적 힘, 치유하는 힘 등 저마다 특별한 능력을 가지고 태어난 마드리갈 패밀리. 하지만 ‘미라벨’은 가족 중 유일하게 아무런
+                                    능력이 없다. 어느 날,
+                                    ‘엔칸토’를 둘러싼 마법의 힘이 위험에 처하자 ‘미라벨’은 유일하게 평범한 자신이 특별한 이 가족의 마지막 희망일지 모른다고 생각하는데..
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h3 class="title">
+                                    <a href="#">
+                                        엔칸토: 마법의 세계
+                                    </a>
+                                </h3>
+                                <p>예매율 10.9% | ★ 8.8 |
+                                    <a class="heart" href="#">♥</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <img src="images/poster_4.jpg" alt="라스트 나잇 인 소호">
+                            </div>
+                            <div class="mask">
+                                <div class="txt">
+                                    패션 디자이너의 꿈을 안고 런던 소호로 온 ‘엘리’는 매일 밤 꿈에서 1960년대 소호의 매혹적인 가수 ‘샌디’를 만나게 되고, 그녀에게 매료된다.
+                                    ‘엘리’는 ‘샌디’에게 화려한 삶이 펼쳐질 것이라 생각했지만 꿈은 점점 악몽이 되어가고 ‘샌디’는 누군가에게 살해당하고 만다. 유일한 목격자가 된
+                                    ‘엘리’다. ‘샌디’를 죽인 범인은 ‘엘리’의 시간 속에 살고 있다.
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h3 class="title">
+                                    <a href="#">
+                                        라스트나잇 인 소호
+                                    </a>
+                                </h3>
+                                <p>예매율 10.8% | D-2 |
+                                    <a class="heart" href="#">♥</a>
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="pic">
+                                <img src="images/poster_5.jpg" alt="킹스맨:퍼스트 에이전트">
+                            </div>
+                            <div class="mask">
+                                <div class="txt">
+                                    역사상 최악의 폭군들과 범죄자들이 모여 수백만 명의 생명을 위협할 전쟁을 모의하는 광기의 시대. 이들을 막으려는 한 사람과 그가 비밀리에 운영 중인
+                                    독립 정보기관, ‘킹스맨’의 최초 미션이 시작된다! 베일에 감춰졌던 킹스맨의 탄생을 목격하라!
+                                </div>
+                            </div>
+                            <div class="info">
+                                <h3 class="title">
+                                    <a href="#">
+                                        킹스맨:퍼스트 에이전트
+                                    </a>
+                                </h3>
+                                <p>예매율 17.5% | D-1 |
+                                    <a class="heart" href="#">♥</a>
+                                </p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section event">
+                <div class="in">
+                    <h2 class="movie_tit">
+                        이벤트
+                    </h2>
+                    <ul class="event_list">
+                        <li>
+                            <a href="#">
+                                <img src="images/event_1.jpg" alt="CGV VIP EXPRESS">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/event_2.jpg" alt="IMAX WORLD TRAVEL">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/event_3.jpg" alt="당일 예매 대신 미리 예매하면 좋아요!">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/event_4.jpg" alt="모든 요일 6천원 할인!">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/event_5.jpg" alt="CGV 용산 아이파크몰 매트릭스 리미티드 티켓">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/event_6.jpg" alt="CGV ART HOUSE, A GOOD MOVIE">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/event_7.jpg" alt="단계적 일상 회복, 백신패스상영관">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="section member">
+                <h2 class="movie_tit">
+                    <span class="red">CGV</span>
+                    멤버십 회원에게만 제공되는 다양한 혜택을 만나 보세요! <br>
+                    <span class="light">WELCOME TO CGV VIP LOUNGE!</span>
+                </h2>
+                <div class="in">
+                    <ul class="member_list">
+                        <li>
+                            <a href="#">
+                                <img src="images/member_1.jpg" alt="만원의 행복! SVIP 고객님은 특별관 관람이 만원!">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/member_2.jpg" alt="포인트 반값 할인! CJ ONE 포인트로 50% 할인!">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/member_3.jpg" alt="스페셜 데이! 기념일에 영화 관람하면 에이드 2잔이 무료!">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        <footer id="footer">
+            <div class="in">
+                <div class="footer_top">
+                    <ul class="top_list">
+                        <li><a href="#">회사 소개</a></li>
+                        <li><a href="#">IR</a></li>
+                        <li><a href="#"><span class="impor">개인정보 처리방침</span></a></li>
+                        <li><a href="#">채용 정보</a></li>
+                        <li><a href="#">광고/프로모션 문의</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">윤리경영</a></li>
+                        <li><a href="#">사이트맵</a></li>
+                    </ul>
+                </div>
+                <div class="cl footer_right">
+                    <ul class="social_list">
+                        <li>
+                            <a href="#">
+                                <img src="images/social_facebook.png" alt="facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social_youtube.png" alt="youtube">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social_twitter.png" alt="twitter">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <img src="images/social_instagram.png" alt="instagram">
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="partner_site">
+                        <div class="partner_menu">
+                            <ul class="partner_list">
+                                <li>CJ그룹</li>
+                                <li><a href="#">CJ주식회사</a></li>
+                            </ul>
+                            <ul class="partner_list">
+                                <li>식품 & 식품서비스</li>
+                                <li><a href="#">CJ제일제당</a></li>
+                                <li><a href="#">CJ푸드빌</a></li>
+                                <li><a href="#">CJ프레시웨이</a></li>
+                            </ul>
+                            <ul class="partner_list">
+                                <li>생명공학</li>
+                                <li><a href="#">CJ제일제당 BIO사업부문</a></li>
+                                <li><a href="#">CJ Feed&Card</a></li>
+                            </ul>
+                            <ul class="partner_list">
+                                <li>물류 & 신유통</li>
+                                <li><a href="#">CJ대한통운</a></li>
+                                <li><a href="#">CJ대한통운 건설부문</a></li>
+                                <li><a href="#">CJ올리브영</a></li>
+                                <li><a href="#">CJ올리브네트웍스</a></li>
+                                <li><a href="#">CJENM 커머스부문</a></li>
+                            </ul>
+                            <ul class="partner_list">
+                                <li>엔터테인먼트 & 미디어</li>
+                                <li><a href="#">CJENM 엔터테인먼트</a></li>
+                                <li><a href="#">CJ CGV</a></li>
+                            </ul>
+                        </div>
+                        <div class="partner_btn">
+                            계열사 바로가기
+                        </div>
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_logo">
+                        <img src="images/logo_footer.png" alt="CJ CGV">
+                    </div>
+                    <div class="footer_txt">
+                        <p class="txt">(04377)서울특별시 용산구 한강대로 23길 55, 아이파크몰 6층(한강로동) <br>
+                            대표이사 : 허민회 | 사업자등록번호 : 104-81-45690 | 통신판매업신고번호 : 2017-서울용산-0662
+                            호스팅사업자 : CJ올리브네트웍스 | 개인정보보호 책임자 : 심준범 | 대표이메일 : cjcgvmaster@cj.net
+                        </p>
+                        <p class="copyright">&copy; CJ CGV. All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <div id="login_mask">
+        <form>
+            <div class="login_popup">
+                <div class="login_tit">로그인</div>
+                <div class="close_btn">
+                    <img src="images/btn_close.png" alt="닫기 버튼">
+                </div>
+                <div class="form_area">
+                    <ul>
+                        <li>
+                            <label for="user_id" class="hide">아이디를 입력하세요.</label>
+                            <input type="text" id="user_id" class="text" placeholder="아이디">
+                        </li>
+                        <li>
+                            <label for="user_pw" class="hide">패스워드를 입력하세요.</label>
+                            <input type="password" id="user_pw" class="text" placeholder="비밀번호">
+                        </li>
+                    </ul>
+                    <div class="info_save">
+                        <label>
+                            <input type="checkbox" class="check_box" name="chk">아이디 저장
+                        </label>
+                    </div>
+                    <div class="ad">
+                        <a href="#" class="ad_txt">휴대폰 간편 로그인</a>
+                        <div class="ad_btn">광고</div>
+                    </div>
+                    <div class="send_btn_area">
+                        <button type="submit" class="send_btn">로그인</button>
+                    </div>
+                    <div class="find_join">
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    ID/PW 찾기
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    회원가입
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--form_area end-->
+                <div class="ad_img">
+                    <img src="images/login_ad.jpg" alt="다가오는 크리스마스는 좋아하는 영화와 함께!">
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="top"><i class="fas fa-sort-up"></i></div>
+</body>
+
+</html>

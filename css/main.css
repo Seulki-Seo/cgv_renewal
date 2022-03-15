@@ -1,0 +1,337 @@
+/*비주얼 슬라이드*/
+#visual {
+	background-color: #000;
+}
+
+#visual .swiper-wrapper {
+	width: 1366px;
+	height: 618px;
+}
+#visual .swiper-wrapper .vis1 {
+	background: url(../images/visual_1.png) no-repeat center top/cover;
+}
+#visual .swiper-wrapper .vis2 {
+	background: url(../images/visual_2.png) no-repeat center top/cover;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+	color: #777;
+}
+.swiper-container-horizontal
+	> .swiper-pagination-bullets
+	.swiper-pagination-bullet {
+	background: #fff;
+}
+.swiper-container .swiper-wrapper {
+	margin-bottom: 40px;
+}
+
+/*빠른 예매_타이틀_영화,시간,극장*/
+#fast_reser {
+	height: 740px;
+	background: #000;
+	position: relative;
+	color: #fff;
+}
+#fast_reser .reser_top {
+	display: flex;
+	width: 100%;
+	border: 2px solid #333;
+	border-radius: 20px;
+	padding: 10px 0;
+	margin-bottom: 30px;
+	font-weight: 700;
+	font-size: 18px;
+}
+#fast_reser .reser_top li {
+	text-align: center;
+}
+#fast_reser .reser_top li:nth-child(1) {
+	flex: 24.65252%;
+}
+#fast_reser .reser_top li:nth-child(2) {
+	flex: 33.79663%;
+}
+#fast_reser .reser_top li:nth-child(3) {
+	flex: 41.55084%;
+}
+
+/*빠른 예매_날짜 선택*/
+#fast_reser .reser_date {
+	display: flex;
+	width: 95.68397%;
+	justify-content: space-around;
+	position: absolute;
+	left: 30px;
+	top: 80px;
+}
+
+/*빠른 예매_선택한 날짜 언더 라인*/
+#fast_reser .reser_date li {
+	position: relative;
+}
+#fast_reser .reser_date li a.on::after {
+	content: "";
+	display: block;
+	width: 75px;
+	height: 3px;
+	background: #d9d9d9;
+	position: absolute;
+	left: 50%;
+	transform: translatex(-50%);
+	top: 30px;
+}
+
+#fast_reser .date_arrow {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	cursor: pointer;
+}
+#fast_reser .saturday {
+	color: #0073c4;
+}
+#fast_reser .sunday {
+	color: #ff0000;
+}
+
+/*빠른 예매_영화 선택*/
+#fast_reser .table_area {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	margin-top: 15px;
+	line-height: 2.3;
+}
+#fast_reser table td {
+	vertical-align: top;
+}
+
+#fast_reser .movie {
+	width: 327px;
+	height: 600px;
+	background: #222;
+	border-radius: 10px;
+}
+#fast_reser .movie_list {
+	padding-left: 30px;
+	padding-bottom: 90px;
+}
+
+/*빠른 예매_극장 선택*/
+#fast_reser .theater {
+	width: 442px;
+	height: 600px;
+	background: #222;
+	border-radius: 10px;
+}
+
+#fast_reser .city_list {
+	padding-left: 30px;
+	padding-bottom: 90px;
+}
+#fast_reser .district_list {
+	padding-left: 30px;
+	padding-bottom: 90px;
+}
+
+/*빠른 예매_영화 선택, 극장 선택 공통*/
+#fast_reser .movie_list li:hover a,
+#fast_reser .city_list li:hover a,
+#fast_reser .district_list li:hover a {
+	text-decoration: underline;
+}
+#fast_reser .movie th,
+#fast_reser .theater th {
+	border-bottom: 1px solid rgba(217, 217, 217, 0.3);
+	padding: 5px;
+	cursor: pointer;
+}
+
+/*빠른 예매_시간 선택*/
+#fast_reser .time {
+	width: 556px;
+	height: 600px;
+	background: #222;
+	border-radius: 10px;
+	position: relative;
+	line-height: 1.3;
+}
+
+#fast_reser .time tr:nth-child(1) {
+	position: absolute;
+	right: 20px;
+	top: 7px;
+}
+#fast_reser .time img {
+	vertical-align: middle;
+	margin: 0 7px 0 7px;
+}
+
+#fast_reser .time_list {
+	display: flex;
+	width: 80%;
+	justify-content: space-between;
+	position: absolute;
+	left: 55px;
+	top: 40px;
+}
+
+#fast_reser .time_arrow {
+	display: flex;
+	width: 98%;
+	justify-content: space-between;
+	cursor: pointer;
+	position: absolute;
+	left: 5px;
+	top: 40px;
+}
+
+#fast_reser .time .day {
+	position: absolute;
+	left: -3px;
+	top: 90px;
+}
+#fast_reser .select_list {
+	margin-top: 80px;
+}
+#fast_reser .select {
+	display: flex;
+	width: 89%;
+	justify-content: space-between;
+	font-weight: 700;
+	padding: 12px 30px;
+}
+#fast_reser .select:nth-child(2),
+#fast_reser .select:nth-child(4),
+#fast_reser .select:nth-child(6) {
+	background: #444;
+	border-radius: 20px;
+}
+#fast_reser .select li {
+	font-size: 18px;
+	padding-top: 5px;
+}
+#fast_reser .select li .s {
+	font-size: 14px;
+	font-weight: 400;
+}
+#fast_reser .select li:nth-child(2) {
+	text-align: left;
+}
+#fast_reser .select li:nth-child(3) {
+	text-align: right;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+/*공통 속성*/
+section {
+	padding-top: 100px;
+	text-align: center;
+}
+section h2 {
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 30px;
+}
+
+/*박스오피스*/
+#main .movies .movie_list {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+}
+#main .movies .movie_list li {
+	position: relative;
+	margin-right: 25px;
+}
+#main .movies .movie_list li img {
+	max-width: 100%;
+}
+#main .movies .movie_list .mask {
+	width: 100%;
+	height: 388px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.6);
+	opacity: 0;
+	transition: 0.5s;
+	text-align: left;
+}
+#main .movies .movie_list .mask .txt {
+	color: #fff;
+	font-size: 14px;
+	padding: 30px 25px;
+}
+#main .movies .movie_list .title {
+	padding: 20px 0 10px;
+	font-size: 18px;
+}
+
+#main .movies .movie_list .heart:hover {
+	color: #e71a0f;
+}
+#main .movies .movie_list li:hover .mask {
+	opacity: 1;
+}
+
+/*이벤트*/
+#main .event_list {
+	display: flex;
+	width: 100%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+#main .event_list li {
+	width: 25%;
+}
+#main .event_list li:nth-child(6) {
+	width: 50%;
+}
+#main .event_list li a {
+	overflow: hidden;
+}
+
+#main .event_list li:hover img {
+	filter: brightness(0.75);
+}
+
+/*멤버십*/
+#main .member {
+	text-align: center;
+	position: relative;
+}
+#main .member .movie_tit {
+	height: 290px;
+	background-color: #293234;
+	background-image: url(../images/pattern.png);
+	font-size: 30px;
+	color: #fff;
+	padding-top: 50px;
+	box-sizing: border-box;
+}
+#main .member .movie_tit .red {
+	color: #e71a0f;
+}
+#main .member .movie_tit .light {
+	font-weight: 400;
+	font-size: 28px;
+	padding-top: 10px;
+}
+
+/*a 태그에 이유 모를 공백이 있어서 검색해 보니 font-size:0을 넣으면 된다고 해서 해결함!*/
+#main .member_list {
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: -130px;
+}
+#main .member_list li {
+	width: 100%;
+	margin-right: 20px;
+	box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+	font-size: 0;
+}
