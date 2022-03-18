@@ -50,6 +50,9 @@
 #main .tab_left_area ul li button.on {
 	background: #d9d9d9;
 }
+#main .time_table_page .tit h2 {
+	text-align: left;
+}
 
 /*전체 영화, CGV ART HOUSE*/
 #main .tab_list {
